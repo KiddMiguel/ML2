@@ -1,0 +1,711 @@
+/*La patie du corps pour faire une largeur de la page et la police des caractères */
+
+body {
+    margin: 0px auto;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* header, la tête de la page (les menus) on crèe une bordur que l'on colore en fonds
+et on ajuste une largeur */
+
+header {
+    text-align: right;
+    border-top: 1px solid rgb(223, 90, 50);
+    width: 100%;
+    margin: 0;
+    background-color: rgb(223, 90, 50);
+}
+
+
+/* .image_logo {
+    position: absolute;
+    top: 40px;
+    text-align: left;
+    justify-content: center important;
+} */
+
+.image_fond {
+    width: 100%;
+}
+
+.accueil,
+.inscription,
+.contact,
+.sport {
+    color: coral;
+    border-bottom: solid 1px coral;
+}
+
+
+/*.titre c'est c'est le titre de la pge M2L, on l'aligne en absolue (peut se placer n'importe où) 
+et on lui place au dessus*/
+
+.title {
+    text-align: left;
+    margin: 0;
+    top: 0px;
+}
+
+.title a {
+    font-size: 2em;
+    top: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* On aligne les menus à la verticale et on les espaces bien comme il faut */
+
+nav {
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+}
+
+nav ul {
+    margin-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 18px;
+    list-style: none;
+    padding: 13px;
+}
+
+
+/* on enlève la décoration des liens et on les colore en noire */
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+
+
+/*On met une couleur en lorsque la souris survol le lien */
+
+nav ul li a:hover {
+    color: coral;
+    border-bottom: solid 1px coral;
+}
+
+
+/*-------------PARTIE SOUS MENU DU LIEN "SPORT"----------------- */
+
+
+/*On met les sous menus du lien sport en absolute pour les placer n'importe où*/
+
+.sous {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid rgb(243, 243, 243);
+    background-color: rgb(243, 243, 243);
+    padding: 5px 20px 10px 10px;
+}
+
+.sous li {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.sous li a {
+    left: 0px;
+    margin: 0;
+    padding: 5px;
+}
+
+
+/* On les aligne en et on fais en sorte qu'ils apparaîssent lors du survole de la souris */
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+
+/* -----------------PARTIE DES LIENS "S'INSCRIRE" et "SE CONNECTER"---------------- */
+
+
+/*Déjà on aligne ça a droite en le rendant absolute */
+
+.connect {
+    text-align: right;
+    position: absolute;
+    margin-left: 1140px;
+    top: 5px;
+}
+
+
+/*On les aligne à la verticale et on crèe des espacements*/
+
+.connect li {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 18px;
+    list-style: none;
+}
+
+
+/* au survol de la souris sur le lien "se connecter" la couleur du texte sera noire et va avoir un fond de la couleur designer */
+
+.connect a:hover {
+    color: black;
+}
+
+.button_connecte a {
+    text-decoration: none;
+    color: white;
+}
+
+.button_connecte a:hover {
+    color: black;
+}
+
+
+/* au survol de la souris sur le lien "se connecter" la couleur du texte sera noire et va avoir un fond de la couleur designer */
+
+.button_inscrit a {
+    text-decoration: none;
+    color: black;
+}
+
+.button_inscrit a:hover {
+    color: white;
+}
+
+
+/*-----------------PARTIE Locaux et autres du liens présentation------------- */
+
+
+/* On aligne les liens qui se trouve dans la page présentation déjà au centre */
+
+.ul_sous {
+    position: absolute;
+    top: 55px;
+    text-align: left;
+    justify-content: center important;
+}
+
+
+/* On aligne les menus loacux et autres à la verticale et on fait des espacements */
+
+.ul_sous li {
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+
+/* -----------PARTIE SECTION DE CE QU'IL Y'AURAS DANS LES PAGES DE PRESENTATIONS--------------*/
+
+.presentation,
+.personnel,
+.equipement,
+.service,
+.reserve {
+    color: coral;
+    border-bottom: solid 1px coral;
+}
+
+.div_equipement {
+    border-bottom: 1px solid rgb(221, 220, 220);
+    text-align: left;
+    text-align: justify;
+}
+
+.sec-accueil {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.paragraphe {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* .images_bat {
+    width: 42%;
+    top: 300px;
+    position: absolute;
+    right: 0;
+} */
+
+
+/*------------------- PARTIE inscription----------------*/
+
+.sec-inscription {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    background: fixed url(../images/fond7.jpg) no-repeat;
+    background-color: rgba(161, 71, 63, 1);
+}
+
+.sec-inscription h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.form_inscription {
+    border-radius: 10px 10px 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"] {
+    padding: 10px 25px 10px 25px;
+}
+
+input[type="submit"] {
+    background: rgb(223, 90, 50);
+    color: white;
+    border: 1px solid rgb(223, 90, 50);
+}
+
+input[type="submit"]:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/*--------------------PARTIE SPORT ---------*/
+
+.sec-sport {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+/*----------PARTIE SECTION --------*/
+
+.sec-presentation_locaux,
+.sec-personnel,
+.sec-equipement,
+.sec-service {
+    text-align: left;
+    text-align: justify;
+    margin-left: 20px;
+    width: 55%;
+    border-right: 1px solid rgb(221, 220, 220);
+    padding: 2px 15px 100px 0px;
+}
+
+.div-presentation_locaux {
+    background: fixed url(../images/bat.jpg) no-repeat;
+}
+
+.div-personnel {
+    background: fixed url(../images/peronnel2.jpg) no-repeat;
+}
+
+.div-equipement {
+    background: fixed url(../images/equip.jpg) no-repeat;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 60px;
+}
+
+.title3 {
+    font-size: 2em;
+}
+
+.text_p {
+    border-top: 1px solid rgb(221, 220, 220);
+    padding-top: 15px;
+}
+
+.img_materiaux {
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+.img_materiaux img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profil {
+    position: absolute;
+    top: -5px;
+    left: 55px;
+}
+
+
+/*-----------------------------LES IMAGES DES SPORTS-----------------------------*/
+
+.image_sport {
+    display: inline-flex;
+    text-align: center;
+}
+
+.image_sport div {
+    padding: 0px 20px 0px 20px;
+}
+
+
+/*------------------------------LES LIENS DES SPORT-----------------------------*/
+
+.liens_sport {
+    text-decoration: none;
+    color: coral;
+    border-bottom: solid 1px coral;
+}
+
+.liens_sport:hover {
+    color: black;
+}
+
+
+/*--------------------PARTIE FOOTER------------------ */
+
+footer {
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid rgb(221, 220, 220);
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+}
+
+footer div a:hover {
+    color: coral;
+    border-bottom: solid 1px coral;
+}
+
+footer p {
+    border-top: 1px solid rgb(221, 220, 220);
+}
+
+
+/*  --------------CSS Simplifier
+
+body {
+	 margin: 0px auto;
+	 width: 100%;
+	 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ header {
+	 text-align: right;
+	 border-top: 1px solid #df5a32;
+	 width: 100%;
+	 margin: 0;
+	 background-color: #df5a32;
+}
+ .image_fond {
+	 width: 100%;
+}
+ .accueil {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .inscription {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .contact {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .sport {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .title {
+	 text-align: left;
+	 margin: 0;
+	 top: 0px;
+}
+ .title a {
+	 font-size: 2em;
+	 top: 0px;
+	 text-decoration: none;
+	 color: black;
+}
+ nav {
+	 border: 1px solid #f5f5f5;
+	 background-color: #f5f5f5;
+}
+ nav ul {
+	 margin-right: 60px;
+}
+ nav ul li {
+	 display: inline-block;
+	 font-size: 18px;
+	 list-style: none;
+	 padding: 13px;
+}
+ nav ul li a {
+	 text-decoration: none;
+	 margin-right: 20px;
+	 color: black;
+}
+ nav ul li a:hover {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ nav > ul li:hover .sous {
+	 display: block;
+}
+ .sous {
+	 display: none;
+	 position: absolute;
+	 margin: 0;
+	 padding-left: 0;
+	 border: 1px solid #f3f3f3;
+	 background-color: #f3f3f3;
+	 padding: 5px 20px 10px 10px;
+}
+ .sous li {
+	 display: flex;
+	 padding: 0;
+	 margin: 0;
+}
+ .sous li a {
+	 left: 0px;
+	 margin: 0;
+	 padding: 5px;
+}
+ .connect {
+	 text-align: right;
+	 position: absolute;
+	 margin-left: 1140px;
+	 top: 5px;
+}
+ .connect li {
+	 display: inline-block;
+	 margin-left: 50px;
+	 font-size: 18px;
+	 list-style: none;
+}
+ .connect a:hover {
+	 color: black;
+}
+ .button_connecte a {
+	 text-decoration: none;
+	 color: white;
+}
+ .button_connecte a:hover {
+	 color: black;
+}
+ .button_inscrit a {
+	 text-decoration: none;
+	 color: black;
+}
+ .button_inscrit a:hover {
+	 color: white;
+}
+ .ul_sous {
+	 position: absolute;
+	 top: 55px;
+	 text-align: left;
+	 justify-content: center important;
+}
+ .ul_sous li {
+	 text-align: left;
+	 display: inline-block;
+	 margin-left: 10px;
+	 font-size: 18px;
+	 margin-top: 20px;
+	 list-style: none;
+}
+ .presentation {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .personnel {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .equipement {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .service {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .reserve {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .div_equipement {
+	 border-bottom: 1px solid #dddcdc;
+	 text-align: left;
+	 text-align: justify;
+}
+ .sec-accueil {
+	 text-align: center;
+	 width: 90%;
+	 margin: 0 auto;
+	 padding-bottom: 100px;
+}
+ .paragraphe {
+	 width: 80%;
+	 margin: 0 auto;
+}
+ .sec-inscription {
+	 text-align: center;
+	 padding-bottom: 60px;
+	 padding-top: 20px;
+	 background: fixed url(../images/fond7.jpg) no-repeat;
+	 background-color: rgba(161, 71, 63, 1);
+}
+ .sec-inscription h1 {
+	 font-size: 2em;
+	 color: white;
+}
+ .form_inscription {
+	 border-radius: 10px 10px 10px;
+	 width: 50%;
+	 margin: 0 auto;
+	 padding: 20px 20px;
+	 border: 1px solid #f5f5f5;
+	 background-color: rgba(245, 245, 245, 0.8);
+}
+ input[type="text"] {
+	 padding: 10px 25px 10px 25px;
+}
+ input[type="password"] {
+	 padding: 10px 25px 10px 25px;
+}
+ input[type="email"] {
+	 padding: 10px 25px 10px 25px;
+}
+ input[type="submit"] {
+	 padding: 10px 25px 10px 25px;
+	 background: #df5a32;
+	 color: white;
+	 border: 1px solid #df5a32;
+}
+ input[type="submit"]:hover {
+	 background: #fff;
+	 color: black;
+	 border: 1px solid #fff;
+}
+ .sec-sport {
+	 text-align: center;
+	 padding-bottom: 60px;
+}
+ .sec-presentation_locaux {
+	 text-align: left;
+	 text-align: justify;
+	 margin-left: 20px;
+	 width: 55%;
+	 border-right: 1px solid #dddcdc;
+	 padding: 2px 15px 100px 0px;
+}
+ .sec-personnel {
+	 text-align: left;
+	 text-align: justify;
+	 margin-left: 20px;
+	 width: 55%;
+	 border-right: 1px solid #dddcdc;
+	 padding: 2px 15px 100px 0px;
+}
+ .sec-equipement {
+	 text-align: left;
+	 text-align: justify;
+	 margin-left: 20px;
+	 width: 55%;
+	 border-right: 1px solid #dddcdc;
+	 padding: 2px 15px 100px 0px;
+}
+ .sec-service {
+	 text-align: left;
+	 text-align: justify;
+	 margin-left: 20px;
+	 width: 55%;
+	 border-right: 1px solid #dddcdc;
+	 padding: 2px 15px 100px 0px;
+}
+ .div-presentation_locaux {
+	 background: fixed url(../images/bat.jpg) no-repeat;
+}
+ .div-personnel {
+	 background: fixed url(../images/peronnel2.jpg) no-repeat;
+}
+ .div-equipement {
+	 background: fixed url(../images/equip.jpg) no-repeat;
+}
+ .title2 {
+	 text-align: center;
+	 font-size: 3em;
+	 margin-top: 60px;
+}
+ .title3 {
+	 font-size: 2em;
+}
+ .text_p {
+	 border-top: 1px solid #dddcdc;
+	 padding-top: 15px;
+}
+ .img_materiaux {
+	 border-bottom: 1px solid #dddcdc;
+}
+ .img_materiaux img {
+	 margin-left: 20px;
+	 margin-bottom: 20px;
+}
+ .profil {
+	 position: absolute;
+	 top: -5px;
+	 left: 55px;
+}
+ .image_sport {
+	 display: inline-flex;
+	 text-align: center;
+}
+ .image_sport div {
+	 padding: 0px 20px 0px 20px;
+}
+ .liens_sport {
+	 text-decoration: none;
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ .liens_sport:hover {
+	 color: black;
+}
+ footer {
+	 border: 1px solid #f5f5f5;
+	 background-color: #f5f5f5;
+	 bottom: 0;
+	 text-align: center;
+	 border-top: 1px solid #dddcdc;
+}
+ footer div a {
+	 text-decoration: none;
+	 color: black;
+}
+ footer div a:hover {
+	 color: coral;
+	 border-bottom: solid 1px coral;
+}
+ footer p {
+	 border-top: 1px solid #dddcdc;
+}
+ 
+ */
